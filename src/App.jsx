@@ -564,15 +564,12 @@ function App() {
                         id="correo"
                         name="correo"
                         variant="standard"
+                        type="email"
                         required
                         InputProps={{
                           sx: {
                             color: isDarkMode ? "#fff" : "#000",
                           },
-                        }}
-                        inputProps={{
-                          pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$",
-                          title: "Por favor, ingresa un correo electrónico válido",
                         }}
                       />
                     </Grid>
