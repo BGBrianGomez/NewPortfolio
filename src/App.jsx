@@ -178,7 +178,7 @@ function App() {
                             Fit Evolution
                           </Typography>
                           <Typography
-                            variant="body2"
+                            variant="body1"
                             color={`${isDarkMode ? "white" : "black"}`}
                             align="justify"
                           >
@@ -261,7 +261,7 @@ function App() {
                             Mama-Quilla
                           </Typography>
                           <Typography
-                            variant="body2"
+                            variant="body1"
                             color={`${isDarkMode ? "white" : "black"}`}
                             align="justify"
                           >
@@ -346,7 +346,7 @@ function App() {
                             Skull Barbershop
                           </Typography>
                           <Typography
-                            variant="body2"
+                            variant="body1"
                             color={`${isDarkMode ? "white" : "black"}`}
                             align="justify"
                           >
@@ -426,6 +426,9 @@ function App() {
                           alt="Js"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      JavaScript
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -433,6 +436,9 @@ function App() {
                           alt="CSS"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      CSS
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -440,6 +446,9 @@ function App() {
                           alt="HTML"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      HTML
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -447,6 +456,9 @@ function App() {
                           alt="React"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      React.Js
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -454,6 +466,9 @@ function App() {
                           alt="Tailwind"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      Tailwind CSS
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -461,6 +476,9 @@ function App() {
                           alt="Vue"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      Vue 3
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -468,6 +486,9 @@ function App() {
                           alt="TypeScript"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      TypeScript
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -475,6 +496,9 @@ function App() {
                           alt="Next"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      Next.Js
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -482,6 +506,9 @@ function App() {
                           alt="Node"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant="body1" align="center" className="dark:text-white">
+      Node.Js
+    </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -489,6 +516,9 @@ function App() {
                           alt="PostgreSQL"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
+                         <Typography variant='body1' align="center" className="dark:text-white">
+      PostgreSQL
+    </Typography>
                       </Grid>
                     </Grid>
                   </div>
@@ -521,6 +551,10 @@ function App() {
                             color: isDarkMode ? "#fff" : "#000",
                           },
                         }}
+                        inputProps={{
+                          pattern: "[A-Za-z ]+",
+                          title: "Por favor, ingresa solo letras y espacios",
+                        }}
                       />
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -530,12 +564,15 @@ function App() {
                         id="correo"
                         name="correo"
                         variant="standard"
-                        type="email"
                         required
                         InputProps={{
                           sx: {
                             color: isDarkMode ? "#fff" : "#000",
                           },
+                        }}
+                        inputProps={{
+                          pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$",
+                          title: "Por favor, ingresa un correo electrónico válido",
                         }}
                       />
                     </Grid>
