@@ -140,7 +140,7 @@ function SideBar(props) {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "../public/CVBrian.pdf";
+    link.href = "../src/assets/CVBrian.pdf";
     link.download = "Brian-Gomez-CV.pdf";
     document.body.appendChild(link);
     link.click();
