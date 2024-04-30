@@ -233,7 +233,7 @@ function SideBar(props) {
           <div className="h-full flex items-center gap-2 justify-end mb-10 flex-col dark:bg-slate-700">
             <SwitchDarkMode setRefreshMode={setRefreshMode} className='h-full' />
           <div className="w-full flex justify-center items-center flex-col gap-2 dark:bg-slate-700">
-            <a href="../public/CVBrian.pdf" target="_blank">
+            <a href="https://drive.google.com/uc?export=download&id=1hAEwDUxKMLK_m1wkSwigY23LeuUGh7pu" download="NombreCV.pdf">
             <button className="bg-slate-400 w-40 rounded-md dark:bg-slate-800 items-center flex h-9 justify-center gap-2">
               <ArchiveIcon className={`text-black dark:text-white`} />
               <h3 className="text-black dark:text-white">Descargar CV</h3>
