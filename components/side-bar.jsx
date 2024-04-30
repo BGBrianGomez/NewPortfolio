@@ -18,7 +18,6 @@ import EmailIcon from "@mui/icons-material/Email";
 import ArchiveIcon from '@mui/icons-material/Archive';
 import SwitchDarkMode from "./switch-dark-mode";
 
-
 const drawerWidth = 240;
 
 function SideBar(props) {
@@ -259,7 +258,7 @@ function SideBar(props) {
           <div className="h-full flex items-center gap-2 justify-end  flex-col dark:bg-slate-700">
             <SwitchDarkMode setRefreshMode={setRefreshMode} className='h-full mb-10' />
           <div className="w-full flex justify-center items-center flex-col gap-2 dark:bg-slate-700 mb-10">
-            <a href="../public/CVBrian.pdf" target='_blank'>
+            <a href="../src/assets/CVBRIAN.pdf" target='_blank'>
             <button className="bg-slate-400 w-40 rounded-md dark:bg-slate-800 items-center flex h-9 justify-center gap-2">
               <ArchiveIcon className={`text-black dark:text-white`} />
               <h3 className="text-black dark:text-white">Descargar CV</h3>
