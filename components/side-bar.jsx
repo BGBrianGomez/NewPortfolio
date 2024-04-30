@@ -139,12 +139,7 @@ function SideBar(props) {
   };
 
   const handleDownloadCV = () => {
-    const link = document.createElement("a");
-    link.href = "../public/CVBrian.pdf";
-    link.download = "Brian-Gomez-CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open("../public/CVBrian.pdf", "_blank")
   };
 
   const drawer = (
@@ -239,10 +234,12 @@ function SideBar(props) {
           <div className="h-full flex items-center gap-2 justify-end mb-10 flex-col dark:bg-slate-700">
             <SwitchDarkMode setRefreshMode={setRefreshMode} className='h-full' />
           <div className="w-full flex justify-center items-center flex-col gap-2 dark:bg-slate-700">
-            <button className="bg-slate-400 w-40 rounded-md dark:bg-slate-800 items-center flex h-9 justify-center gap-2" onClick={handleDownloadCV}>
+            <a href="../public/CVBrian.pdf" target="_blank">
+            <button className="bg-slate-400 w-40 rounded-md dark:bg-slate-800 items-center flex h-9 justify-center gap-2">
               <ArchiveIcon className={`text-black dark:text-white`} />
               <h3 className="text-black dark:text-white">Descargar CV</h3>
             </button>
+            </a>
           </div>
         </div>
         </Drawer>
@@ -262,10 +259,12 @@ function SideBar(props) {
           <div className="h-full flex items-center gap-2 justify-end  flex-col dark:bg-slate-700">
             <SwitchDarkMode setRefreshMode={setRefreshMode} className='h-full mb-10' />
           <div className="w-full flex justify-center items-center flex-col gap-2 dark:bg-slate-700 mb-10">
-            <button className="bg-slate-400 w-40 rounded-md dark:bg-slate-800 items-center flex h-9 justify-center gap-2" onClick={handleDownloadCV}>
+            <a href="../public/CVBrian.pdf" target='_blank'>
+            <button className="bg-slate-400 w-40 rounded-md dark:bg-slate-800 items-center flex h-9 justify-center gap-2">
               <ArchiveIcon className={`text-black dark:text-white`} />
               <h3 className="text-black dark:text-white">Descargar CV</h3>
             </button>
+            </a>
           </div>
         </div>
         </Drawer>
