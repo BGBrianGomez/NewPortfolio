@@ -258,7 +258,7 @@ function App() {
                             component="div"
                             color={`${isDarkMode ? "white" : "black"}`}
                           >
-                            Skull Barbershop
+                            Mama-Quilla
                           </Typography>
                           <Typography
                             variant="body2"
