@@ -19,7 +19,7 @@ import BGName from "./assets/BG.png";
 import BGBlack from "./assets/BGBlack.png";
 import FitEvolution from "./assets/FitEvolution.png";
 import SkullBarber from "./assets/Skull-Barbershop.png";
-import MamaQuilla from "./assets/Mama-Quilla.jpg";
+import TranslateIO from "./assets/Translate-IO.png";
 import React from "./assets/React.png";
 import Js from "./assets/Js.png";
 import HTML from "./assets/HTML.png";
@@ -96,7 +96,15 @@ function App() {
               />
             </div>
           </div>
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%", display: `${displaySobremi ? 'block' : 'none'}`}}>
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              display: `${displaySobremi ? "block" : "none"}`,
+            }}
+          >
             <Collapse orientation="horizontal" in={checkedSobremi}>
               <div className="bg-slate-100 dark:bg-slate-500 h-full sm:h-screen w-full sm:w-calc-vw-60px flex flex-row bg-gradient-to-r from-slate-400 dark:from-slate-900 from-60%">
                 <div className="sm:h-full w-full sm:w-2/3 flex flex-col justify-center">
@@ -145,7 +153,15 @@ function App() {
               </div>
             </Collapse>
           </div>
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%",  display: `${displayProyectos ? 'block' : 'none'}` }}>
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              display: `${displayProyectos ? "block" : "none"}`,
+            }}
+          >
             <Collapse orientation="horizontal" in={checkedProyectos}>
               <div className="bg-slate-100 dark:bg-slate-500 h-full sm:h-screen w-screen sm:w-calc-vw-60px bg-gradient-to-r from-slate-400 dark:from-slate-900 from-60%">
                 <div className="flex justify-center h-20 items-center">
@@ -161,7 +177,7 @@ function App() {
                         backgroundColor: `${isDarkMode ? "#1e293b" : "white"}`,
                       }}
                     >
-                      <CardActionArea>
+                      <CardActionArea href="https://fit-revolution-main.vercel.app/" target="_blank">
                         <CardMedia
                           component="img"
                           height="140"
@@ -197,43 +213,46 @@ function App() {
                             className=" pt-2"
                           >
                             <Grid item>
-                            <img
-                              src={Js}
-                              alt=""
-                              className="dark:bg-slate-600 w-14 p-1 rounded-md object-contain"
+                              <img
+                                src={Js}
+                                alt=""
+                                className="dark:bg-slate-600 w-14 p-1 rounded-md object-contain"
                               />
-                              </Grid>
-                              <Grid item>
-                            <img
-                              src={React}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={Tailwind}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={React}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={Node}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={Tailwind}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={PostgreSQL}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={Node}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
+                            </Grid>
+                            <Grid item>
+                              <img
+                                src={PostgreSQL}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                           </Grid>
                         </CardContent>
                       </CardActionArea>
+                        <a className="flex items-center justify-center gap-5" href="https://github.com/BGBrianGomez/PF-fitEvolution" target="_blank"> 
+                            <button className="bg-slate-400 dark:bg-slate-600 dark:text-white text-black rounded-md p-1">Repositorio</button>
+                          </a>
                       <CardActions></CardActions>
                     </Card>
                   </div>
@@ -244,11 +263,11 @@ function App() {
                         backgroundColor: `${isDarkMode ? "#1e293b" : "white"}`,
                       }}
                     >
-                      <CardActionArea>
+                      <CardActionArea href="https://translate-io.vercel.app/" target="_blank">
                         <CardMedia
                           component="img"
                           height="140"
-                          image={MamaQuilla}
+                          image={TranslateIO}
                           alt="green iguana"
                         />
                         <CardContent>
@@ -258,21 +277,20 @@ function App() {
                             component="div"
                             color={`${isDarkMode ? "white" : "black"}`}
                           >
-                            Mama-Quilla
+                            Trasnlate-IO
                           </Typography>
                           <Typography
                             variant="body1"
                             color={`${isDarkMode ? "white" : "black"}`}
                             align="justify"
                           >
-                            Proyecto web desarrollado para dueña de
-                            emprendimiento para mascotas, la cual vende collares
-                            de mascotas con código QR, y requeria que sus
-                            clientes puedan activar los collares una vez
-                            adquiridos, por lo que se diseño y desarrollo la
-                            web, donde dichos clientes, una vez registrados,
-                            pueden activar su TAG, cargar los datos de su
-                            mascota y vincularlo.
+                            TranslateIO es una aplicación web diseñada para
+                            facilitar la traducción de texto entre diferentes
+                            idiomas de manera rápida y precisa. La aplicación
+                            también ofrece la capacidad de reproducir el texto
+                            original y traducido en voz alta, además, TranslateIO permite copiar fácilmente el
+                            texto traducido con un solo clic, lo que simplifica
+                            el proceso de compartir información.  
                           </Typography>
                           <Grid
                             container
@@ -282,43 +300,39 @@ function App() {
                             className=" pt-2"
                           >
                             <Grid item>
-                            <img
-                              src={Js}
-                              alt=""
-                              className="dark:bg-slate-600 w-14 p-1 rounded-md object-contain"
+                              <img
+                                src={Js}
+                                alt=""
+                                className="dark:bg-slate-600 w-14 p-1 rounded-md object-contain"
                               />
-                              </Grid>
-                              <Grid item>
-                            <img
-                              src={TypeScript}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={React}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={React}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={Tailwind}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={Tailwind}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={Next}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={Node}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                           </Grid>
                         </CardContent>
                       </CardActionArea>
+                          <a className="flex items-center justify-center gap-5" href="https://github.com/BGBrianGomez/TranslateIO" target="_blank">
+                            <button className="bg-slate-400 dark:bg-slate-600 dark:text-white text-black rounded-md p-1">Repositorio</button>
+                          </a>
                       <CardActions></CardActions>
                     </Card>
                   </div>
@@ -329,7 +343,7 @@ function App() {
                         backgroundColor: `${isDarkMode ? "#1e293b" : "white"}`,
                       }}
                     >
-                      <CardActionArea>
+                      <CardActionArea href="https://skull-barber.vercel.app/" target="_blank">
                         <CardMedia
                           component="img"
                           height="140"
@@ -364,36 +378,39 @@ function App() {
                             className=" pt-2"
                           >
                             <Grid item>
-                            <img
-                              src={Js}
-                              alt=""
-                              className="dark:bg-slate-600 w-14 p-1 rounded-md object-contain"
+                              <img
+                                src={Js}
+                                alt=""
+                                className="dark:bg-slate-600 w-14 p-1 rounded-md object-contain"
                               />
-                              </Grid>
-                              <Grid item>
-                            <img
-                              src={Vue}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={Tailwind}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={Vue}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                             <Grid item>
-                            <img
-                              src={Node}
-                              alt=""
-                              className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
-                            />
+                              <img
+                                src={Tailwind}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
+                            </Grid>
+                            <Grid item>
+                              <img
+                                src={Node}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
                             </Grid>
                           </Grid>
                         </CardContent>
                       </CardActionArea>
+                        <a className="flex items-center justify-center gap-5" href="https://github.com/BGBrianGomez/SkullBarber" target="_blank">
+                            <button className="bg-slate-400 text-black dark:bg-slate-600 dark:text-white rounded-md p-1">Repositorio</button>
+                          </a>
                       <CardActions></CardActions>
                     </Card>
                   </div>
@@ -401,7 +418,15 @@ function App() {
               </div>
             </Collapse>
           </div>
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%",  display: `${displayTecnologias ? 'block' : 'none'}` }}>
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              display: `${displayTecnologias ? "block" : "none"}`,
+            }}
+          >
             <Collapse orientation="horizontal" in={checkedTecnologias}>
               <div className="bg-slate-100 dark:bg-slate-500 h-full sm:h-screen sm:w-calc-vw-60px bg-gradient-to-r from-slate-400 dark:from-slate-900 from-60%">
                 <div className="h-full w-full p-10">
@@ -426,9 +451,13 @@ function App() {
                           alt="Js"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      JavaScript
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          JavaScript
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -436,9 +465,13 @@ function App() {
                           alt="CSS"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      CSS
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          CSS
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -446,9 +479,13 @@ function App() {
                           alt="HTML"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      HTML
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          HTML
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -456,9 +493,13 @@ function App() {
                           alt="React"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      React.Js
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          React.Js
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -466,9 +507,13 @@ function App() {
                           alt="Tailwind"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      Tailwind CSS
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          Tailwind CSS
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -476,9 +521,13 @@ function App() {
                           alt="Vue"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      Vue 3
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          Vue 3
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -486,9 +535,13 @@ function App() {
                           alt="TypeScript"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      TypeScript
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          TypeScript
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -496,9 +549,13 @@ function App() {
                           alt="Next"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      Next.Js
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          Next.Js
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -506,9 +563,13 @@ function App() {
                           alt="Node"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant="body1" align="center" className="dark:text-white">
-      Node.Js
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          Node.Js
+                        </Typography>
                       </Grid>
                       <Grid item>
                         <img
@@ -516,9 +577,13 @@ function App() {
                           alt="PostgreSQL"
                           className="h-24 w-full dark:bg-slate-600 p-1 rounded-md"
                         />
-                         <Typography variant='body1' align="center" className="dark:text-white">
-      PostgreSQL
-    </Typography>
+                        <Typography
+                          variant="body1"
+                          align="center"
+                          className="dark:text-white"
+                        >
+                          PostgreSQL
+                        </Typography>
                       </Grid>
                     </Grid>
                   </div>
@@ -526,7 +591,15 @@ function App() {
               </div>
             </Collapse>
           </div>
-          <div style={{ position: "absolute", top: 0, left: 0, width: "100%",  display: `${displayContacto ? 'block' : 'none'}` }}>
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              display: `${displayContacto ? "block" : "none"}`,
+            }}
+          >
             <Collapse orientation="horizontal" in={checkedContacto}>
               <div className="bg-slate-100 dark:bg-slate-500 h-calc-vh-nav sm:h-screen w-screen sm:w-calc-vw-60px bg-gradient-to-r from-slate-400 dark:from-slate-900 from-60%">
                 <div className="flex flex-col h-full w-full items-center">
@@ -637,9 +710,7 @@ function App() {
                         target="_blank"
                       >
                         <LinkedInIcon className="mx-1" />
-                        <p className="hidden sm:block">
-                        LinkedIn
-                        </p>
+                        <p className="hidden sm:block">LinkedIn</p>
                       </Button>
                       <Button
                         variant="contained"
@@ -648,9 +719,7 @@ function App() {
                         target="_blank"
                       >
                         <GitHubIcon className="mx-1" />
-                        <p className="hidden sm:block">
-                        GitHub
-                        </p>
+                        <p className="hidden sm:block">GitHub</p>
                       </Button>
                     </Grid>
                   </form>
