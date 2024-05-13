@@ -30,6 +30,7 @@ import TypeScript from "./assets/TypeScript.png";
 import Node from "./assets/Node.png";
 import PostgreSQL from "./assets/PostgreSQL.png";
 import Next from "./assets/Next.png";
+import GitHubSearch from "./assets/GitHubSearch.png";
 
 function App() {
   const [checkedSobremi, setCheckedSobremi] = useState(false);
@@ -163,13 +164,13 @@ function App() {
             }}
           >
             <Collapse orientation="horizontal" in={checkedProyectos}>
-              <div className="bg-slate-100 dark:bg-slate-500 h-full sm:h-screen w-screen sm:w-calc-vw-60px bg-gradient-to-r from-slate-400 dark:from-slate-900 from-60%">
+              <div className="bg-slate-100 dark:bg-slate-500 h-full w-screen sm:w-calc-vw-60px bg-gradient-to-r px-10 pb-10 from-slate-400 dark:from-slate-900 from-60%">
                 <div className="flex justify-center h-20 items-center">
                   <h3 className=" font-benguiat text-3xl dark:text-white bg-white dark:bg-slate-800 p-2 rounded-md shadow-md">
                     Experiencia laboral
                   </h3>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-5 mx-4 items-center justify-center pb-4">
+                <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-8">
                   <div>
                     <Card
                       sx={{
@@ -410,6 +411,81 @@ function App() {
                       </CardActionArea>
                         <a className="flex items-center justify-center gap-5" href="https://github.com/BGBrianGomez/SkullBarber" target="_blank">
                             <button className="bg-slate-400 text-black dark:bg-slate-600 dark:text-white rounded-md p-1">Repositorio</button>
+                          </a>
+                      <CardActions></CardActions>
+                    </Card>
+                  </div>
+                  <div>
+                    <Card
+                      sx={{
+                        maxWidth: 345,
+                        backgroundColor: `${isDarkMode ? "#1e293b" : "white"}`,
+                      }}
+                    >
+                      <CardActionArea href="https://git-hub-search-dusky.vercel.app/" target="_blank">
+                        <CardMedia
+                          component="img"
+                          height="140"
+                          image={GitHubSearch}
+                          alt="green iguana"
+                        />
+                        <CardContent>
+                          <Typography
+                            gutterBottom
+                            variant="h5"
+                            component="div"
+                            color={`${isDarkMode ? "white" : "black"}`}
+                          >
+                            GitHub Search
+                          </Typography>
+                          <Typography
+                            variant="body1"
+                            color={`${isDarkMode ? "white" : "black"}`}
+                            align="justify"
+                          >
+                            El proyecto consiste en un motor de busqueda de perfiles de GitHub, utilizando la API de GitHub, para poder visualizar los proyectos del perfil buscado.
+                          </Typography>
+                          <Grid
+                            container
+                            spacing={{ xs: 2, md: 3 }}
+                            columns={{ xs: 4, sm: 8, md: 12 }}
+                            justifyContent={"center"}
+                            className=" pt-2"
+                          >
+                            <Grid item>
+                              <img
+                                src={Js}
+                                alt=""
+                                className="dark:bg-slate-600 w-14 p-1 rounded-md object-contain"
+                              />
+                            </Grid>
+                            <Grid item>
+                              <img
+                                src={React}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
+                            </Grid>
+                            <Grid item>
+                              <img
+                                src={Tailwind}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
+                            </Grid>
+                            <Grid item>
+                              <img
+                                src={Node}
+                                alt=""
+                                className="dark:bg-slate-600 p-1 w-14 rounded-md object-contain"
+                              />
+                            </Grid>
+                           
+                          </Grid>
+                        </CardContent>
+                      </CardActionArea>
+                        <a className="flex items-center justify-center gap-5" href="https://github.com/BGBrianGomez/GitHubSearch" target="_blank"> 
+                            <button className="bg-slate-400 dark:bg-slate-600 dark:text-white text-black rounded-md p-1">Repositorio</button>
                           </a>
                       <CardActions></CardActions>
                     </Card>
